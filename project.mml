@@ -577,7 +577,7 @@
     }
   ],
   "scale": 1,
-  "metatile": 2,
+  "metatile": 3,
   "name": "Ride With GPS",
   "description": "Custom ridewithgps tile styling",
   "attribution": "",

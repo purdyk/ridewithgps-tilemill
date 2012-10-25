@@ -13,6 +13,7 @@
   text-fill: spin(darken(@park_fill, 70), -15);
   text-halo-fill: lighten(@park_fill, 8);
   text-min-distance: 10;
+  text-min-padding: 10;
   [zoom=14] { text-size: 11; }
   [zoom>=15] { text-size: 12; }
 }
@@ -26,6 +27,7 @@
   text-max-char-angle-delta: 30;
   text-label-position-tolerance: 80;
   text-avoid-edges: true;
+  text-min-padding: 10;
   text-allow-overlap: false;
   [highway='motorway'][zoom>=9] {
     text-name:"[name]";
@@ -126,6 +128,9 @@
   text-fill:#333;
   text-halo-fill:#fff;
   text-halo-radius:2;
+  text-min-padding: 10;
+  text-avoid-edges: true;
+  text-allow-overlap: false;
   [zoom>=3] { text-size:12; text-halo-radius:1; }
   [zoom=5] { text-size:13; text-halo-radius:1; }
   [zoom=6] { text-size:13; text-halo-radius:1; }
@@ -145,7 +150,9 @@
   text-fill:#333;
   text-halo-fill:#fff;
   text-halo-radius:2;
-  /*text-allow-overlap: true;*/
+  text-min-padding: 10;
+  text-avoid-edges: true;
+  text-allow-overlap: false;
   [zoom=4] { text-size:12; text-halo-radius:1; }
   [zoom=5] { text-size:13; text-halo-radius:1; }
   [zoom=6] { text-size:13; text-halo-radius:1; }
@@ -166,6 +173,9 @@
   text-fill:#333;
   text-halo-fill:#fff;
   text-halo-radius:2;
+  text-min-padding: 10;
+  text-avoid-edges: true;
+  text-allow-overlap: false;
   [zoom=7] { text-size:10; text-halo-radius:1; }
   [zoom=8] { text-size:10; text-halo-radius:1; }
   [zoom=9] { text-size:11; text-halo-radius:1; }
@@ -186,6 +196,9 @@
   text-fill:#444;
   text-halo-fill:#fff;
   text-halo-radius:2;
+  text-min-padding: 10;
+  text-avoid-edges: true;
+  text-allow-overlap: false;
   [zoom=10] { text-size:10; text-halo-radius:1; }
   [zoom=11] { text-size:10; }
   [zoom=12] { text-size:11; }

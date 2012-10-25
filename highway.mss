@@ -91,6 +91,7 @@
     shield-name: "[ref]";
     shield-face-name: @font_reg;
     shield-avoid-edges: true;
+    shield-min-padding: 20;
     shield-min-distance: 80;
     shield-size: 10;
     shield-fill: #000;
