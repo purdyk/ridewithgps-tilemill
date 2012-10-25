@@ -28,7 +28,7 @@
     <Datasource>
        <Parameter name="dbname"><![CDATA[osm]]></Parameter>
        <Parameter name="extent"><![CDATA[]]></Parameter>
-       <Parameter name="file"><![CDATA[./layers/world_borders_merc.shp]]></Parameter>
+       <Parameter name="file"><![CDATA[./layers/world/39906004-world_borders_merc.shp]]></Parameter>
        <Parameter name="host"><![CDATA[]]></Parameter>
        <Parameter name="password"><![CDATA[]]></Parameter>
        <Parameter name="port"><![CDATA[]]></Parameter>
@@ -104,7 +104,7 @@
     <StyleName>ne-admin-0-glow</StyleName>
     <StyleName>ne-admin-0</StyleName>
     <Datasource>
-       <Parameter name="file"><![CDATA[./layers/10m_admin_0_boundary_lines_land.shp]]></Parameter>
+       <Parameter name="file"><![CDATA[./layers/ne-admin-0/491a515b-admin_0_boundary_lines_land.shp]]></Parameter>
        <Parameter name="id"><![CDATA[ne-admin-0]]></Parameter>
        <Parameter name="project"><![CDATA[ridewithgps]]></Parameter>
        <Parameter name="srs"><![CDATA[]]></Parameter>
@@ -184,7 +184,7 @@
     <StyleName>ne-admin-1-glow</StyleName>
     <StyleName>ne-admin-1</StyleName>
     <Datasource>
-       <Parameter name="file"><![CDATA[./layers/10m_admin_1_states_provinces_lines_shp.shp]]></Parameter>
+       <Parameter name="file"><![CDATA[./layers/ne-admin-1/60bcb61f-admin_1_states_provinces_lines_shp.shp]]></Parameter>
        <Parameter name="id"><![CDATA[ne-admin-1]]></Parameter>
        <Parameter name="project"><![CDATA[ridewithgps]]></Parameter>
        <Parameter name="srs"><![CDATA[]]></Parameter>
@@ -345,7 +345,7 @@ where amenity in ('hospital','college','school','university')
 and (building is null or building not in ('no'))
 ) as campus]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[]]></Parameter>
+       <Parameter name="user"><![CDATA[gis]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -371,7 +371,7 @@ WHERE "landuse" IN ('allotments','farm','farmland','farmyard',
  'orchard','vineyard')
 ORDER BY z_order asc ) AS agriculture]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[]]></Parameter>
+       <Parameter name="user"><![CDATA[gis]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -435,7 +435,7 @@ ORDER BY z_order asc ) AS agriculture]]></Parameter>
             OR "natural" IN ('fell', 'heath', 'scrub')
           ORDER BY z_order asc ) AS grass]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[]]></Parameter>
+       <Parameter name="user"><![CDATA[gis]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -462,7 +462,7 @@ ORDER BY z_order asc ) AS agriculture]]></Parameter>
   ORDER BY z_order asc
 ) AS beach]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[]]></Parameter>
+       <Parameter name="user"><![CDATA[gis]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -511,7 +511,7 @@ ORDER BY z_order asc ) AS agriculture]]></Parameter>
             OR "landuse" IN ('allotments', 'cemetery','recreation_ground', 'village_green')
           ORDER BY z_order asc ) AS park]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[]]></Parameter>
+       <Parameter name="user"><![CDATA[gis]]></Parameter>
        <Parameter name="id"><![CDATA[park]]></Parameter>
        <Parameter name="project"><![CDATA[open-streets]]></Parameter>
        <Parameter name="srs"><![CDATA[null]]></Parameter>
@@ -759,7 +759,7 @@ ORDER BY z_order asc ) AS agriculture]]></Parameter>
 OR wood is not null
           ORDER BY z_order asc ) AS forest]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[]]></Parameter>
+       <Parameter name="user"><![CDATA[gis]]></Parameter>
        <Parameter name="id"><![CDATA[forest]]></Parameter>
        <Parameter name="project"><![CDATA[ridewithgps]]></Parameter>
        <Parameter name="srs"><![CDATA[+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over]]></Parameter>
@@ -781,7 +781,7 @@ OR wood is not null
     <Datasource>
        <Parameter name="dbname"><![CDATA[osm]]></Parameter>
        <Parameter name="extent"><![CDATA[]]></Parameter>
-       <Parameter name="file"><![CDATA[./layers/lakes.shp]]></Parameter>
+       <Parameter name="file"><![CDATA[./layers/ne-lakes/77e50cb0-lakes.shp]]></Parameter>
        <Parameter name="host"><![CDATA[]]></Parameter>
        <Parameter name="password"><![CDATA[]]></Parameter>
        <Parameter name="port"><![CDATA[]]></Parameter>
@@ -849,7 +849,7 @@ OR wood is not null
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
        <Parameter name="srid"><![CDATA[900913]]></Parameter>
        <Parameter name="dbname"><![CDATA[gis]]></Parameter>
-       <Parameter name="user"><![CDATA[]]></Parameter>
+       <Parameter name="user"><![CDATA[gis]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -884,7 +884,7 @@ OR wood is not null
 where "natural" in ('marsh','wetland')
 ) as wetland]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[]]></Parameter>
+       <Parameter name="user"><![CDATA[gis]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -911,7 +911,7 @@ FROM planet_osm_polygon
 WHERE "aeroway" IN ('apron','runway','taxiway','helipad')
 ORDER BY z_order asc ) AS aero_poly]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[]]></Parameter>
+       <Parameter name="user"><![CDATA[gis]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -949,7 +949,7 @@ ORDER BY z_order asc ) AS aero_poly]]></Parameter>
 where amenity = 'parking'
 ) as parking]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[]]></Parameter>
+       <Parameter name="user"><![CDATA[gis]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -1368,7 +1368,7 @@ where amenity = 'parking'
   and tunnel in ( 'yes', 'true', '1' )
   order by z_order ) as roads]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[]]></Parameter>
+       <Parameter name="user"><![CDATA[gis]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -4378,7 +4378,7 @@ where amenity = 'parking'
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
        <Parameter name="srid"><![CDATA[900913]]></Parameter>
        <Parameter name="dbname"><![CDATA[gis]]></Parameter>
-       <Parameter name="user"><![CDATA[]]></Parameter>
+       <Parameter name="user"><![CDATA[gis]]></Parameter>
        <Parameter name="id"><![CDATA[route-line]]></Parameter>
        <Parameter name="project"><![CDATA[open-streets]]></Parameter>
        <Parameter name="srs"><![CDATA[null]]></Parameter>
@@ -11747,7 +11747,7 @@ where amenity = 'parking'
        <Parameter name="extent"><![CDATA[-20037508.34,-20037508.34,20037508.34,20037508.34]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
        <Parameter name="dbname"><![CDATA[gis]]></Parameter>
-       <Parameter name="user"><![CDATA[]]></Parameter>
+       <Parameter name="user"><![CDATA[gis]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -11791,7 +11791,7 @@ where amenity = 'parking'
        <Parameter name="table"><![CDATA[( SELECT highway,way FROM planet_osm_point
   WHERE "highway" = 'turning_circle' ) AS turning_circle]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="user"><![CDATA[]]></Parameter>
+       <Parameter name="user"><![CDATA[gis]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -13219,7 +13219,7 @@ order by z_order asc ) as highway_label]]></Parameter>
        <Parameter name="extent"><![CDATA[-20037508.34,-20037508.34,20037508.34,20037508.34]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
        <Parameter name="dbname"><![CDATA[gis]]></Parameter>
-       <Parameter name="user"><![CDATA[]]></Parameter>
+       <Parameter name="user"><![CDATA[gis]]></Parameter>
        <Parameter name="id"><![CDATA[highway-label]]></Parameter>
        <Parameter name="project"><![CDATA[ridewithgps]]></Parameter>
        <Parameter name="srs"><![CDATA[+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over]]></Parameter>
@@ -13255,7 +13255,7 @@ order by z_order asc ) as highway_label]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
        <Parameter name="srid"><![CDATA[900913]]></Parameter>
        <Parameter name="dbname"><![CDATA[gis]]></Parameter>
-       <Parameter name="user"><![CDATA[]]></Parameter>
+       <Parameter name="user"><![CDATA[gis]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -13329,7 +13329,7 @@ order by z_order asc ) as highway_label]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
        <Parameter name="srid"><![CDATA[900913]]></Parameter>
        <Parameter name="dbname"><![CDATA[gis]]></Parameter>
-       <Parameter name="user"><![CDATA[]]></Parameter>
+       <Parameter name="user"><![CDATA[gis]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -13607,7 +13607,7 @@ order by z_order asc ) as highway_label]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
        <Parameter name="srid"><![CDATA[900913]]></Parameter>
        <Parameter name="dbname"><![CDATA[gis]]></Parameter>
-       <Parameter name="user"><![CDATA[]]></Parameter>
+       <Parameter name="user"><![CDATA[gis]]></Parameter>
     </Datasource>
   </Layer>
 
@@ -13733,7 +13733,7 @@ order by z_order asc ) as highway_label]]></Parameter>
        <Parameter name="extent"><![CDATA[-20037508.34,-20037508.34,20037508.34,20037508.34]]></Parameter>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
        <Parameter name="dbname"><![CDATA[gis]]></Parameter>
-       <Parameter name="user"><![CDATA[]]></Parameter>
+       <Parameter name="user"><![CDATA[gis]]></Parameter>
     </Datasource>
   </Layer>
 
