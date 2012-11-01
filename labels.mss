@@ -140,48 +140,52 @@
 
 /* ---- Towns ------------------------------------------------------- */
 
-#place::town[type='town'][zoom>=9][zoom<=17] {
-  text-name:'[name]';
-  text-face-name:@sans;
-  text-placement:point;
-  text-fill:@town_text;
-  text-size:9;
-  text-halo-fill:@town_halo;
-  text-halo-radius:1;
-  text-wrap-width: 50;
-  [zoom>=10] {
-    text-halo-radius:2;
-    text-size: 10;
-  }
-  [zoom>=11]{ text-size:11; }
-  [zoom>=12]{
-    text-size:12;
-    text-line-spacing: 1;
-  }
-  [zoom>=13]{
-    text-transform: uppercase;
-    text-character-spacing: 1;
-    text-line-spacing: 2;
-  }
-  [zoom>=14]{
-    text-size:13;
-    text-character-spacing: 2;
-    text-line-spacing: 3;
-  }
-  [zoom>=15]{
-    text-size:14;
-    text-character-spacing: 3;
-    text-line-spacing: 4;
-  }
-  [zoom>=15]{
-    text-size:15;
-    text-character-spacing: 4;
-    text-line-spacing: 5;
-  }
-  [zoom>=17]{
-    text-size:16;
-    text-character-spacing: 5;
-    text-line-spacing: 6;
+#place::town {
+  [type='large_town'][zoom>=7][zoom<17],
+  [type='small_town'][zoom>=8][zoom<17],
+  [type='town'][zoom>=8][zoom<=17] {
+    text-name:'[name]';
+    text-face-name:@sans;
+    text-placement:point;
+    text-fill:@town_text;
+    text-size:9;
+    text-halo-fill:@town_halo;
+    text-halo-radius:1;
+    text-wrap-width: 50;
+    [zoom>=8] {
+      text-halo-radius:2;
+      text-size: 10;
+    }
+    [zoom>=11]{ text-size:11; }
+    [zoom>=12]{
+      text-size:12;
+      text-line-spacing: 1;
+    }
+    [zoom>=13]{
+      text-transform: uppercase;
+      text-character-spacing: 1;
+      text-line-spacing: 2;
+    }
+    [zoom>=14]{
+      text-size:13;
+      text-character-spacing: 2;
+      text-line-spacing: 3;
+    }
+    [zoom>=15]{
+      text-size:14;
+      text-character-spacing: 3;
+      text-line-spacing: 4;
+    }
+    [zoom>=15]{
+      text-size:15;
+      text-character-spacing: 4;
+      text-line-spacing: 5;
+    }
+    [zoom>=17]{
+      text-size:16;
+      text-character-spacing: 5;
+      text-line-spacing: 6;
+    }
   }
 }
 
