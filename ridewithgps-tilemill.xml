@@ -54834,84 +54834,84 @@
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([type] = 'path')</Filter>
-    <TextSymbolizer size="13" fill="#226d1b" halo-fill="#ddf7e1" fontset-name="fontset-0" placement="line" halo-radius="2" avoid-edges="true" max-char-angle-delta="30" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="13" fill="#226d1b" halo-fill="#ddf7e1" fontset-name="fontset-0" placement="line" halo-radius="2" avoid-edges="true" max-char-angle-delta="20" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'path')</Filter>
-    <TextSymbolizer size="12" fill="#226d1b" halo-fill="#ddf7e1" fontset-name="fontset-0" placement="line" halo-radius="2" avoid-edges="true" max-char-angle-delta="30" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" fill="#226d1b" halo-fill="#ddf7e1" fontset-name="fontset-0" placement="line" halo-radius="2" avoid-edges="true" max-char-angle-delta="20" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'path')</Filter>
-    <TextSymbolizer fill="#226d1b" halo-fill="#ddf7e1" fontset-name="fontset-0" placement="line" halo-radius="2" avoid-edges="true" size="11" max-char-angle-delta="30" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer fill="#226d1b" halo-fill="#ddf7e1" fontset-name="fontset-0" placement="line" halo-radius="2" avoid-edges="true" size="11" max-char-angle-delta="20" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([type] = 'pedestrian')</Filter>
-    <TextSymbolizer size="13" fill="#b6a46d" halo-fill="#ffffff" fontset-name="fontset-0" placement="line" halo-radius="2" avoid-edges="true" max-char-angle-delta="30" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="13" fill="#b6a46d" halo-fill="#ffffff" fontset-name="fontset-0" placement="line" halo-radius="2" avoid-edges="true" max-char-angle-delta="20" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'pedestrian')</Filter>
-    <TextSymbolizer size="12" fill="#b6a46d" halo-fill="#ffffff" fontset-name="fontset-0" placement="line" halo-radius="2" avoid-edges="true" max-char-angle-delta="30" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" fill="#b6a46d" halo-fill="#ffffff" fontset-name="fontset-0" placement="line" halo-radius="2" avoid-edges="true" max-char-angle-delta="20" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'pedestrian')</Filter>
-    <TextSymbolizer fill="#b6a46d" halo-fill="#ffffff" fontset-name="fontset-0" placement="line" halo-radius="2" avoid-edges="true" size="11" max-char-angle-delta="30" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer fill="#b6a46d" halo-fill="#ffffff" fontset-name="fontset-0" placement="line" halo-radius="2" avoid-edges="true" size="11" max-char-angle-delta="20" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([type] = 'footway')</Filter>
-    <TextSymbolizer size="13" fill="#226d1b" halo-fill="#ddf7e1" fontset-name="fontset-0" placement="line" halo-radius="2" avoid-edges="true" max-char-angle-delta="30" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="13" fill="#226d1b" halo-fill="#ddf7e1" fontset-name="fontset-0" placement="line" halo-radius="2" avoid-edges="true" max-char-angle-delta="20" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'footway')</Filter>
-    <TextSymbolizer size="12" fill="#226d1b" halo-fill="#ddf7e1" fontset-name="fontset-0" placement="line" halo-radius="2" avoid-edges="true" max-char-angle-delta="30" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" fill="#226d1b" halo-fill="#ddf7e1" fontset-name="fontset-0" placement="line" halo-radius="2" avoid-edges="true" max-char-angle-delta="20" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'footway')</Filter>
-    <TextSymbolizer fill="#226d1b" halo-fill="#ddf7e1" fontset-name="fontset-0" placement="line" halo-radius="2" avoid-edges="true" size="11" max-char-angle-delta="30" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer fill="#226d1b" halo-fill="#ddf7e1" fontset-name="fontset-0" placement="line" halo-radius="2" avoid-edges="true" size="11" max-char-angle-delta="20" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([type] = 'cycleway')</Filter>
-    <TextSymbolizer size="13" fill="#155665" halo-fill="#d0e5f5" fontset-name="fontset-0" placement="line" halo-radius="2" avoid-edges="true" max-char-angle-delta="30" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="13" fill="#155665" halo-fill="#d0e5f5" fontset-name="fontset-0" placement="line" halo-radius="2" avoid-edges="true" max-char-angle-delta="20" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([type] = 'cycleway')</Filter>
-    <TextSymbolizer size="12" fill="#155665" halo-fill="#d0e5f5" fontset-name="fontset-0" placement="line" halo-radius="2" avoid-edges="true" max-char-angle-delta="30" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" fill="#155665" halo-fill="#d0e5f5" fontset-name="fontset-0" placement="line" halo-radius="2" avoid-edges="true" max-char-angle-delta="20" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([type] = 'cycleway')</Filter>
-    <TextSymbolizer fill="#155665" halo-fill="#d0e5f5" fontset-name="fontset-0" placement="line" halo-radius="2" avoid-edges="true" size="11" max-char-angle-delta="30" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer fill="#155665" halo-fill="#d0e5f5" fontset-name="fontset-0" placement="line" halo-radius="2" avoid-edges="true" size="11" max-char-angle-delta="20" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <TextSymbolizer size="13" fontset-name="fontset-0" placement="line" fill="#777777" halo-fill="#ffffff" halo-radius="2" avoid-edges="true" max-char-angle-delta="30" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="13" fontset-name="fontset-0" placement="line" fill="#777777" halo-fill="#ffffff" halo-radius="2" avoid-edges="true" max-char-angle-delta="20" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <TextSymbolizer size="12" fontset-name="fontset-0" placement="line" fill="#777777" halo-fill="#ffffff" halo-radius="2" avoid-edges="true" max-char-angle-delta="30" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" fontset-name="fontset-0" placement="line" fill="#777777" halo-fill="#ffffff" halo-radius="2" avoid-edges="true" max-char-angle-delta="20" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <TextSymbolizer fontset-name="fontset-0" placement="line" fill="#777777" halo-fill="#ffffff" halo-radius="2" avoid-edges="true" size="11" max-char-angle-delta="30" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" placement="line" fill="#777777" halo-fill="#ffffff" halo-radius="2" avoid-edges="true" size="11" max-char-angle-delta="20" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="path_label"
@@ -54921,7 +54921,7 @@
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
        <Parameter name="table"><![CDATA[( SELECT way, highway AS type, name, oneway
   FROM planet_osm_line
-  WHERE (name IS NOT NULL OR oneway IN ('yes', 'true', '1', '-1'))
+  WHERE name IS NOT NULL
     AND highway IN  ('pedestrian','footway', 'cycleway', 'path')
 ) AS data]]></Parameter>
        <Parameter name="key_field"><![CDATA[]]></Parameter>
@@ -60178,7 +60178,7 @@
     <MarkersSymbolizer file="img/icon/oneway-reverse.svg" placement="line" max-error="0.5" spacing="200" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([oneway] = -1)</Filter>
     <TextSymbolizer fontset-name="fontset-0" placement="line" fill="#777777" halo-fill="#ffffff" halo-radius="1" minimum-distance="20" avoid-edges="true" size="11" ><![CDATA[[name]]]></TextSymbolizer>
@@ -60204,7 +60204,7 @@
     <MarkersSymbolizer placement="line" max-error="0.5" spacing="200" file="img/icon/oneway.svg" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([oneway] != 0)</Filter>
     <TextSymbolizer fontset-name="fontset-0" placement="line" fill="#777777" halo-fill="#ffffff" halo-radius="1" minimum-distance="20" avoid-edges="true" size="11" ><![CDATA[[name]]]></TextSymbolizer>
@@ -60219,7 +60219,7 @@
     <TextSymbolizer size="12" fontset-name="fontset-0" placement="line" fill="#777777" halo-fill="#ffffff" halo-radius="1" minimum-distance="20" avoid-edges="true" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
+    <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <TextSymbolizer fontset-name="fontset-0" placement="line" fill="#777777" halo-fill="#ffffff" halo-radius="1" minimum-distance="20" avoid-edges="true" size="11" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>

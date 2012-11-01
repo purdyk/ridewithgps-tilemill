@@ -450,7 +450,7 @@
   [zoom>=17] { text-size: 13; }
 }
 
-#minorroad_label[zoom>14] {
+#minorroad_label[zoom>=13] {
   text-name:'[name]';
   text-face-name:@sans;
   text-placement:line;
@@ -475,7 +475,7 @@
   //text-spacing: 200;
   text-avoid-edges: true;
   text-size:11;
-  text-max-char-angle-delta: 30;
+  text-max-char-angle-delta: 20;
   [type='cycleway'] { text-fill: @cycle_text; text-halo-fill: @cycle_halo; }
   [type='footway'] { text-fill: @foot_text; text-halo-fill: @foot_halo; }
   [type='pedestrian'] { text-fill: @pedestrian_text; text-halo-fill: @pedestrian_halo; }
