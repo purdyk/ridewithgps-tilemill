@@ -33,6 +33,9 @@
   [type='forest']        { polygon-fill: @wooded; line-color: darken(@forest, 15%); }
   [type='golf_course']   { polygon-fill: @sports; }
   [type='grass']         { polygon-fill: @grass; line-color: darken(@grass, 15%); }
+  [type='garden']        { polygon-fill: @grass; }
+  [type='dog_park']      { polygon-fill: @grass; }
+  [type='common']        { polygon-fill: @grass; }
   [type='hospital']      { polygon-fill: @hospital; }
   [type='industrial']    { polygon-fill: @industrial; }
   [type='park']          { polygon-fill: @park; line-color: darken(@park, 15%); }

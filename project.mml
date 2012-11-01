@@ -25,14 +25,21 @@
   "Layer": [
     {
       "Datasource": {
-        "file": "http://tilemill-data.s3.amazonaws.com/osm/shoreline_300.zip"
+        "file": "layers/shoreline_300/shoreline_300.shp"
       },
       "class": "shp",
       "geometry": "polygon",
       "id": "shoreline_300",
       "name": "shoreline_300",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-      "srs-name": "900913"
+      "srs-name": "900913",
+      "extent": [
+        -179.99999692067183,
+        -85.051,
+        179.99999692067183,
+        83.66933299999998
+      ],
+      "advanced": {}
     },
     {
       "Datasource": {
@@ -60,7 +67,7 @@
     },
     {
       "Datasource": {
-        "file": "layers/processed_p/7f5a1dfb-coastline-good.shp"
+        "file": "layers/processed_p/coastline-good.shp"
       },
       "class": "shp",
       "geometry": "polygon",
@@ -542,7 +549,7 @@
       "Datasource": {
         "dbname": "gis",
         "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
-        "file": "layers/ne_places/14bd1506-10m-populated-places-simple.shp",
+        "file": "layers/ne_places/10m-populated-places-simple.shp",
         "user": "gis"
       },
       "class": "",
