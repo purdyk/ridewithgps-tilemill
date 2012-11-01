@@ -457,23 +457,24 @@
   text-fill:@road_text;
   text-halo-fill:@road_halo;
   text-halo-radius:1;
-  text-min-distance:40;
+  text-min-distance:20;
   text-avoid-edges: true;
   text-size:11;
   [zoom=16] { text-size: 12; }
   [zoom>=17] { text-size: 13; }
 }
 
-#path_label[zoom>14] {
+#path_label[zoom>=14] {
   text-name:'[name]';
   text-face-name:@sans;
   text-placement:line;
   text-fill:@road_text;
   text-halo-fill:@road_halo;
   text-halo-radius:2;
-  text-min-distance:60;
+  //text-min-distance:20;
   text-avoid-edges: true;
   text-size:11;
+  text-max-char-angle-delta: 30;
   [type='cycleway'] { text-fill: @cycle_text; text-halo-fill: @cycle_halo; }
   [type='footway'] { text-fill: @foot_text; text-halo-fill: @foot_halo; }
   [type='pedestrian'] { text-fill: @pedestrian_text; text-halo-fill: @pedestrian_halo; }
