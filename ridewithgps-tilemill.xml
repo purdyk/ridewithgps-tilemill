@@ -391,6 +391,36 @@
 
 <Style name="landuse" filter-mode="first" >
   <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <Filter>([type] = 'farm')</Filter>
+    <PolygonSymbolizer fill="#f4f0e0" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <Filter>([type] = 'orchard')</Filter>
+    <PolygonSymbolizer fill="#f4f0e0" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <Filter>([type] = 'allotments')</Filter>
+    <PolygonSymbolizer fill="#f4f0e0" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <Filter>([type] = 'vineyard')</Filter>
+    <PolygonSymbolizer fill="#f4f0e0" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <Filter>([type] = 'farmland')</Filter>
+    <PolygonSymbolizer fill="#f4f0e0" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>400000</MaxScaleDenominator>
+    <Filter>([type] = 'farmyard')</Filter>
+    <PolygonSymbolizer fill="#f4f0e0" />
+  </Rule>
+  <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([type] = 'wood')</Filter>
     <PolygonSymbolizer fill="#c3d9ad" />
@@ -731,72 +761,72 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>750</MaxScaleDenominator>
-    <Filter>([type] = 'canal')</Filter>
+    <Filter>([type] = 'river')</Filter>
     <LineSymbolizer stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke="#c0d8ff" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500</MaxScaleDenominator>
     <MinScaleDenominator>750</MinScaleDenominator>
-    <Filter>([type] = 'canal')</Filter>
+    <Filter>([type] = 'river')</Filter>
     <LineSymbolizer stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke="#c0d8ff" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <MinScaleDenominator>1500</MinScaleDenominator>
-    <Filter>([type] = 'canal')</Filter>
+    <Filter>([type] = 'river')</Filter>
     <LineSymbolizer stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke="#c0d8ff" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] = 'canal')</Filter>
+    <Filter>([type] = 'river')</Filter>
     <LineSymbolizer stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke="#c0d8ff" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] = 'canal')</Filter>
+    <Filter>([type] = 'river')</Filter>
     <LineSymbolizer stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#c0d8ff" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] = 'canal')</Filter>
+    <Filter>([type] = 'river')</Filter>
     <LineSymbolizer stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#c0d8ff" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750</MaxScaleDenominator>
-    <Filter>([type] = 'river')</Filter>
+    <Filter>([type] = 'canal')</Filter>
     <LineSymbolizer stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke="#c0d8ff" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500</MaxScaleDenominator>
     <MinScaleDenominator>750</MinScaleDenominator>
-    <Filter>([type] = 'river')</Filter>
+    <Filter>([type] = 'canal')</Filter>
     <LineSymbolizer stroke-width="6" stroke-linecap="round" stroke-linejoin="round" stroke="#c0d8ff" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
     <MinScaleDenominator>1500</MinScaleDenominator>
-    <Filter>([type] = 'river')</Filter>
+    <Filter>([type] = 'canal')</Filter>
     <LineSymbolizer stroke-width="5" stroke-linecap="round" stroke-linejoin="round" stroke="#c0d8ff" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <Filter>([type] = 'river')</Filter>
+    <Filter>([type] = 'canal')</Filter>
     <LineSymbolizer stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke="#c0d8ff" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <Filter>([type] = 'river')</Filter>
+    <Filter>([type] = 'canal')</Filter>
     <LineSymbolizer stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke="#c0d8ff" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
-    <Filter>([type] = 'river')</Filter>
+    <Filter>([type] = 'canal')</Filter>
     <LineSymbolizer stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#c0d8ff" />
   </Rule>
   <Rule>

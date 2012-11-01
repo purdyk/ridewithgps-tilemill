@@ -50,6 +50,17 @@
   [type='wood']          { polygon-fill: @wooded; line-color: darken(@wooded, 15%);}
 }
 
+#landuse[zoom>10] {
+  [type='allotments'],
+  [type='farm'],
+  [type='farmland'],
+  [type='farmyard'],
+  [type='orchard'],
+  [type='vineyard'] {
+    polygon-fill: @agriculture;
+  }
+}
+
 #landuse_overlays[type='nature_reserve'][zoom>=9] {
   line-color: darken(@wooded,25%);
   line-opacity:  0.3;
