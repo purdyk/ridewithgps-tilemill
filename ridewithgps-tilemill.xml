@@ -824,7 +824,7 @@
 <Style name="water_gen0" filter-mode="first" >
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
-    <MinScaleDenominator>750000</MinScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
     <PolygonSymbolizer fill="#c0d8ff" />
   </Rule>
 </Style>
@@ -852,8 +852,8 @@
 
 <Style name="water_gen1" filter-mode="first" >
   <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <MinScaleDenominator>100000</MinScaleDenominator>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
     <PolygonSymbolizer fill="#c0d8ff" />
   </Rule>
 </Style>
@@ -881,7 +881,7 @@
 
 <Style name="water" filter-mode="first" >
   <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
     <PolygonSymbolizer fill="#c0d8ff" />
   </Rule>
 </Style>
