@@ -465,6 +465,7 @@
 }
 
 #path_label[zoom>=13] {
+  text-label-position-tolerance: 80;
   text-name:'[name]';
   text-face-name:@sans;
   text-placement:line;
