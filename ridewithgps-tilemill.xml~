@@ -52232,7 +52232,7 @@
     <TextSymbolizer size="12" wrap-width="60" fontset-name="fontset-0" placement="point" fill="#444444" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="2" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <MinScaleDenominator>1500000</MinScaleDenominator>
     <Filter>([type] = 'city')</Filter>
     <TextSymbolizer size="12" halo-radius="1" fontset-name="fontset-0" placement="point" fill="#444444" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" ><![CDATA[[name]]]></TextSymbolizer>
@@ -52249,7 +52249,7 @@
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>750000</MinScaleDenominator>
     <Filter>([type] = 'state')</Filter>
-    <TextSymbolizer size="12" character-spacing="1" wrap-width="80" line-spacing="2" halo-radius="2" fontset-name="fontset-1" placement="point" fill="#554466" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="13" character-spacing="1" wrap-width="80" line-spacing="2" halo-radius="2" fontset-name="fontset-1" placement="point" fill="#554466" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
@@ -52261,13 +52261,13 @@
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>3000000</MinScaleDenominator>
     <Filter>([type] = 'state')</Filter>
-    <TextSymbolizer size="11" wrap-width="50" fontset-name="fontset-1" placement="point" fill="#554466" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="13" wrap-width="50" fontset-name="fontset-1" placement="point" fill="#554466" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
     <Filter>([type] = 'state')</Filter>
-    <TextSymbolizer size="10" wrap-width="40" fontset-name="fontset-1" placement="point" fill="#554466" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" wrap-width="40" fontset-name="fontset-1" placement="point" fill="#554466" halo-fill="rgba(255, 255, 255, 0.6599999999999999)" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
