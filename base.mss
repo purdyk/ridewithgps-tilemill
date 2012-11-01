@@ -10,12 +10,17 @@
 /* LANDUSE & LANDCOVER
 /* ================================================================== */
 
-#world[zoom<8],
 #land[zoom>=0][zoom<6],
 #shoreline_300[zoom>=6][zoom<10],
 #processed_p[zoom>=10] {
   polygon-fill: @land;
   polygon-gamma: 0.75;
+}
+
+#ne-lakes[zoom<6],
+.water[zoom>5] {
+  polygon-fill:@water;
+  polygon-gamma:0.8;
 }
 
 #landuse_gen0[zoom>3][zoom<=9],
@@ -166,6 +171,15 @@
   [zoom=2] { line-opacity: 0.25; }
   [zoom=3] { line-opacity: 0.3; }
   [zoom=4] { line-opacity: 0.4; }
+}
+#admin[admin_level=3][zoom>2] {
+  line-color:@admin_2;
+  line-width:0.5;
+  line-opacity: 0.5;
+  [zoom=2] { line-opacity: 0.25; line-dasharray:2,2; }
+  [zoom=3] { line-opacity: 0.3; line-dasharray:2,2; }
+  [zoom=4] { line-opacity: 0.4; line-dasharray:2,2; }
+  [zoom>4] { line-opacity: 0.5; line-dasharray:4,4; }
 }
 
 

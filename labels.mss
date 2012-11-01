@@ -95,13 +95,11 @@
   text-fill:@city_text;
   text-halo-fill:@city_halo;
   text-halo-radius:2;
-  [zoom=5] { text-size: 11; text-halo-radius:1; }
-  [zoom<=8] {
+  text-size: 11;
+  [zoom>=8] {
     text-size: 12;
-    text-halo-radius:1;
   }
   [zoom=9] {
-    text-size:12;
     text-wrap-width: 60;
   }
   [zoom=10] {
@@ -383,12 +381,12 @@
 /* ROAD LABELS
 /* ================================================================== */
 
-#motorway_label[zoom>=7][zoom<=14][reflen<=8] {
+#motorway_label[zoom>=7][zoom<=14][reflen>0][reflen<=8] {
   shield-name: "[ref]";
   shield-size: 9;
   shield-face-name: @sans_bold;
   shield-fill: #fff;
-  shield-file: url(img/shield-motorway-1.png);
+  shield-file: url(img/shield-motorway-6.png);
   shield-min-distance: 50;
   //shield-min-padding: 20;
   shield-avoid-edges: true;
