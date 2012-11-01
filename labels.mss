@@ -58,14 +58,15 @@
   text-halo-fill: @state_halo;
   text-halo-radius: 1;
   [zoom=6] {
-    text-size:10 + @text_adjust;
+    text-size:12 + @text_adjust;
     text-wrap-width: 40;
   }
   [zoom=7] {
-    text-size:11 + @text_adjust;
+    text-size:13 + @text_adjust;
     text-wrap-width: 50;
   }
   [zoom>8] {
+    text-size:11 + @text_adjust;
     text-halo-radius: 2;
   }
   [zoom=8] {
@@ -74,7 +75,7 @@
     text-line-spacing: 1;
   }
   [zoom=9] {
-    text-size:12 + @text_adjust;
+    text-size:13 + @text_adjust;
     text-character-spacing: 1;
     text-wrap-width: 80;
     text-line-spacing: 2;
@@ -87,7 +88,7 @@
 
 /* ---- Cities ------------------------------------------------------ */
 
-#place::city[type='city'][zoom>=8][zoom<=15] {
+#place::city[type='city'][zoom>=5][zoom<=15] {
   text-name:'[name]';
   text-face-name:@sans;
   text-placement:point;
