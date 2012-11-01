@@ -362,8 +362,8 @@ come in as well.
     [stylegroup='minorroad']{ line-width: @rdz18_min; }
     [stylegroup='service']  { line-width: @rdz18_min / 2; }
     [stylegroup='railway']  { line-width: 4; }
-    [stylegroup='foot'] 	{ line-width: 7; }
-    [stylegroup='cycle'] 	{ line-width: 7; }
+    [stylegroup='foot'] 	{ line-width: 5; }
+    [stylegroup='cycle'] 	{ line-width: 5; }
   }
 }
 

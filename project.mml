@@ -616,6 +616,31 @@
       "status": "on"
     },
     {
+      "geometry": "linestring",
+      "extent": [
+        -123.21099838186439,
+        45.09600143377555,
+        -122.11300189329812,
+        45.8969989781367
+      ],
+      "Datasource": {
+        "type": "postgis",
+        "table": "( SELECT way, highway AS type, name, oneway\n  FROM planet_osm_line\n  WHERE (name IS NOT NULL OR oneway IN ('yes', 'true', '1', '-1'))\n    AND highway IN  ('pedestrian','footway', 'cycleway', 'path')\n) AS data",
+        "key_field": "",
+        "geometry_field": "way",
+        "extent_cache": "auto",
+        "extent": "-13715785.6,5636647.63,-13593557.19,5763858.57",
+        "user": "gis",
+        "dbname": "gis"
+      },
+      "id": "path_label",
+      "class": "",
+      "srs-name": "900913",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "advanced": {},
+      "name": "path_label"
+    },
+    {
       "Datasource": {
         "dbname": "gis",
         "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
@@ -698,31 +723,6 @@
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
       "srs-name": "900913",
       "status": "on"
-    },
-    {
-      "geometry": "linestring",
-      "extent": [
-        -123.21099838186439,
-        45.09600143377555,
-        -122.11300189329812,
-        45.8969989781367
-      ],
-      "Datasource": {
-        "type": "postgis",
-        "table": "( SELECT way, highway AS type, name, oneway\n  FROM planet_osm_line\n  WHERE (name IS NOT NULL OR oneway IN ('yes', 'true', '1', '-1'))\n    AND highway IN  ('pedestrian','footway', 'cycleway', 'path')\n) AS data",
-        "key_field": "",
-        "geometry_field": "way",
-        "extent_cache": "auto",
-        "extent": "-13715785.6,5636647.63,-13593557.19,5763858.57",
-        "user": "gis",
-        "dbname": "gis"
-      },
-      "id": "path_label",
-      "class": "",
-      "srs-name": "900913",
-      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-      "advanced": {},
-      "name": "path_label"
     }
   ],
   "scale": 1,

@@ -464,14 +464,15 @@
   [zoom>=17] { text-size: 13; }
 }
 
-#path_label[zoom>=14] {
+#path_label[zoom>=13] {
   text-name:'[name]';
   text-face-name:@sans;
   text-placement:line;
   text-fill:@road_text;
   text-halo-fill:@road_halo;
   text-halo-radius:2;
-  //text-min-distance:20;
+  //text-min-distance:100;
+  //text-spacing: 200;
   text-avoid-edges: true;
   text-size:11;
   text-max-char-angle-delta: 30;
