@@ -209,42 +209,58 @@
     {
       "Datasource": {
         "dbname": "gis",
-        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "extent": "-20037508.34,-20037508.34,20037508.34,20037508.34",
         "geometry_field": "way",
         "id": "water_gen0",
         "key_field": "",
         "project": "foss4g-2011",
         "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-        "table": "( SELECT way, \"natural\" AS type, way_area AS area\n  FROM planet_osm_polygon\n  WHERE (\"natural\" IN ('water', 'pond')\n    OR waterway IN ('basin', 'canal', 'mill_pond', 'pond', 'riverbank', 'stream'))\n    AND way_area > 10000\n) AS data",
+        "table": "( SELECT way, \"natural\" AS type, way_area AS area\n  FROM planet_osm_polygon\n  WHERE (\"natural\" IN ('water', 'pond', 'bay')\n    OR waterway IN ('basin', 'canal', 'mill_pond', 'pond', 'riverbank', 'stream', 'river'))\n    AND way_area > 10000\n) AS data",
         "type": "postgis",
-        "user": "gis"
+        "user": "gis",
+        "extent_cache": "auto"
       },
       "class": "",
       "geometry": "polygon",
       "id": "water_gen0",
       "name": "water_gen0",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-      "srs-name": "900913"
+      "srs-name": "900913",
+      "extent": [
+        -179.9999999749438,
+        -85.051,
+        179.9999999749438,
+        85.051
+      ],
+      "advanced": {}
     },
     {
       "Datasource": {
         "dbname": "gis",
-        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "extent": "-20037508.34,-20037508.34,20037508.34,20037508.34",
         "geometry_field": "way",
         "id": "water_gen1",
         "key_field": "",
         "project": "foss4g-2011",
         "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-        "table": "( SELECT way, \"natural\" AS type, way_area AS area\n  FROM planet_osm_polygon\n  WHERE (\"natural\" IN ('water', 'pond')\n    OR waterway IN ('basin', 'canal', 'mill_pond', 'pond', 'riverbank', 'stream'))\n    AND way_area > 1000\n) AS data",
+        "table": "( SELECT way, \"natural\" AS type, way_area AS area\n  FROM planet_osm_polygon\n  WHERE (\"natural\" IN ('water', 'pond', 'bay')\n    OR waterway IN ('basin', 'canal', 'mill_pond', 'pond', 'riverbank', 'stream', 'river'))\n    AND way_area > 1000\n) AS data",
         "type": "postgis",
-        "user": "gis"
+        "user": "gis",
+        "extent_cache": "auto"
       },
       "class": "",
       "geometry": "polygon",
       "id": "water_gen1",
       "name": "water_gen1",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-      "srs-name": "900913"
+      "srs-name": "900913",
+      "extent": [
+        -179.9999999749438,
+        -85.051,
+        179.9999999749438,
+        85.051
+      ],
+      "advanced": {}
     },
     {
       "Datasource": {
@@ -255,7 +271,7 @@
         "key_field": "",
         "project": "foss4g-2011",
         "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-        "table": "( SELECT way, way_area AS area\n  FROM planet_osm_polygon\n  WHERE \"natural\" IN ('water', 'pond')\n    OR \"landuse\" IN ('basin','reservoir','water')\n    OR waterway IN ('basin', 'canal', 'mill_pond', 'pond', 'riverbank', 'stream')\n) AS data",
+        "table": "( SELECT way, way_area\n  FROM planet_osm_polygon\n  WHERE \"natural\" IN ('water', 'pond', 'bay')\n    OR \"landuse\" IN ('basin','reservoir','water')\n    OR waterway IN ('basin', 'canal', 'mill_pond', 'pond', 'riverbank', 'stream', 'river')\n) AS data",
         "type": "postgis",
         "user": "gis",
         "extent_cache": "auto"
@@ -544,27 +560,6 @@
       "name": "bridge",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
       "srs-name": "900913"
-    },
-    {
-      "Datasource": {
-        "dbname": "gis",
-        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
-        "file": "layers/ne_places/10m-populated-places-simple.shp",
-        "user": "gis"
-      },
-      "class": "",
-      "geometry": "point",
-      "id": "ne_places",
-      "name": "ne_places",
-      "srs": "",
-      "srs-name": "autodetect",
-      "extent": [
-        -179.58997888396897,
-        -81.17908472282718,
-        179.38330358817024,
-        82.48332318035943
-      ],
-      "advanced": {}
     },
     {
       "Datasource": {

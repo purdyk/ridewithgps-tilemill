@@ -40,7 +40,7 @@ as well. */
     line-color: @trunk_fill; }
   [type='primary'] { line-color: @primary_fill; }
   [type='secondary'] { line-color: @secondary_fill; }
-  //[type='tertiary'] { line-color: @tertiary_fill; }
+  [type='tertiary'] { line-color: @tertiary_fill; }
   [zoom=7] {
     [type='primary'] { line-width: 0; }
     [type='secondary'] { line-width: 0; }
@@ -69,7 +69,7 @@ as well. */
     line-color: @trunk_line; }
   [type='primary'] { line-color: @primary_line; }
   [type='secondary'] { line-color: @secondary_line; }
-  //[type='tertiary'] { line-color: @tertiary_line; }
+  [type='tertiary'] { line-color: @tertiary_line; }
   [zoom=7] {
     [type='primary'] { line-width: 1.0; line-opacity: 0.8 }
     [type='secondary'] { line-width: 0; }

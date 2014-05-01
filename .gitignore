@@ -1,2 +1,7 @@
 layers/
 *.swp
+*.osm
+*.osm.bz2
+.vagrant_ram
+.vagrant_cpu
+.vagrant
