@@ -18,15 +18,15 @@
 /* ================================================================== */
 
 /* directory to load fonts from in addition to the system directories */
-Map { font-directory: url(./fonts); buffer-size: 256; background-color: @water; }
+Map { buffer-size: 256; background-color: @water; }
 
 /* set up font sets for various weights and styles */
-@sans_lt:           "DejaVu Sans Book", "unifont Medium";
-@sans_lt_italic:    "DejaVu Sans Book Italic", "unifont Medium";
-@sans:              "DejaVu Sans Book", "unifont Medium";
-@sans_italic:       "DejaVu Sans Italic", "unifont Medium";
-@sans_bold:         "DejaVu Sans Bold", "unifont Medium";
-@sans_bold_italic:  "DejaVu Sans Bold Italic", "unifont Medium";
+@sans_lt:           "Roboto Light", "unifont Medium";
+@sans_lt_italic:    "Roboto Light Italic", "unifont Medium";
+@sans:              "Roboto Medium", "unifont Medium";
+@sans_italic:       "Roboto Medium Italic", "unifont Medium";
+@sans_bold:         "Roboto Bold", "unifont Medium";
+@sans_bold_italic:  "Roboto Bold Italic", "unifont Medium";
 
 
 /* Some fonts are larger or smaller than others. Use this variable to
@@ -51,7 +51,7 @@ Map { font-directory: url(./fonts); buffer-size: 256; background-color: @water; 
 @cemetery:          @park;
 @wooded:            @forest;
 
-@hospital:          #e5c6c4;
+@hospital:          #755654;
 @school:            @park;
 @sports:            @park;
 
@@ -73,7 +73,7 @@ Map { font-directory: url(./fonts); buffer-size: 256; background-color: @water; 
  *         inner fill (inline).
  */
 
-@motorway_fill: 	#666;
+@motorway_fill: 	#555;
 @motorway_line: 	spin(darken(@motorway_fill,25),-10);
 @motorway_case:     @motorway_line * 0.9;
 
@@ -94,14 +94,14 @@ Map { font-directory: url(./fonts); buffer-size: 256; background-color: @water; 
 @tertiary_case: 	@tertiary_line * 0.9;
 
 @standard_line:     @land * 0.85;
-@standard_fill:     #777;
+@standard_fill:     #555;
 @standard_case:     @land * 0.9;
 
-@pedestrian_fill:   #999;
+@pedestrian_fill:   #666;
 @pedestrian_line:   @standard_line;
 @pedestrian_case:   @land;
 
-@cycle_fill: 		#aaa;
+@cycle_fill: 		#666;
 @cycle_line: 		spin(darken(@cycle_fill,25),-10);
 @cycle_case:   		@land;
 
@@ -113,11 +113,11 @@ Map { font-directory: url(./fonts); buffer-size: 256; background-color: @water; 
 @path_line: 		spin(darken(@path_fill,25),-10);
 @path_case:   		@land;
 
-@rail_line:         #777;
-@rail_fill:         #999;
+@rail_line:         #555;
+@rail_fill:         #666;
 @rail_case:         @land;
 
-@aeroway:           #777;
+@aeroway:           #555;
 
 /* ================================================================== */
 /* BOUNDARY COLORS
@@ -131,7 +131,7 @@ Map { font-directory: url(./fonts); buffer-size: 256; background-color: @water; 
 
 /* We set up a default halo color for places so you can edit them all
    at once or override each individually. */
-@place_halo:        fadeout(#333,15%);
+@place_halo:        fadeout(#111,25%);
 
 @country_text:      #999;
 @country_halo:      @place_halo;
@@ -150,7 +150,7 @@ Map { font-directory: url(./fonts); buffer-size: 256; background-color: @water; 
 @road_text:         @country_text;
 @road_halo:         @place_halo;
 
-@cycle_halo: 		fadeout(#444,15%);
+@cycle_halo: 		fadeout(#111,25%);
 @cycle_text: 		#aaa;
 @foot_halo: 		@cycle_halo;
 @foot_text: 		@cycle_text;
