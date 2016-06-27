@@ -15,8 +15,7 @@ Vagrant.configure("2") do |config|
       vb.customize ["modifyvm", :id, "--cpus", cpus ]
     end
   end
-  config.vm.box = "precise64"
-  config.vm.box_url = "http://files.vagrantup.com/precise64.box"
+  config.vm.box = "ubuntu/trusty64"
   config.vm.network :private_network, ip: "10.30.30.50"
   config.vm.network :forwarded_port, host: 20008, guest: 20008
   config.vm.network :forwarded_port, host: 20009, guest: 20009
