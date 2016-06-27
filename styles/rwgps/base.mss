@@ -109,9 +109,9 @@
 /* WATER AREAS
 /* ================================================================== */
 
-#water_gen0[zoom>3][zoom<=9],
-#water_gen1[zoom>9][zoom<=12],
-#water[zoom>12] {
+#water_gen0[zoom>3][zoom<=6],
+#water_gen1[zoom>6][zoom<=9],
+#water[zoom>9] {
   polygon-fill: @water;
 }
 

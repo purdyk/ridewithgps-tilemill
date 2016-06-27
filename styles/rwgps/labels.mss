@@ -57,31 +57,26 @@
   text-fill:@state_text;
   text-halo-fill: @state_halo;
   text-halo-radius: 1;
+  text-size:14 + @text_adjust;
   [zoom=6] {
-    text-size:14 + @text_adjust;
     text-wrap-width: 40;
   }
   [zoom=7] {
-    text-size:14 + @text_adjust;
     text-wrap-width: 50;
   }
   [zoom>8] {
-    text-size:14 + @text_adjust;
     text-halo-radius: 2;
   }
   [zoom=8] {
-    text-size:14 + @text_adjust;
     text-wrap-width: 50;
     text-line-spacing: 1;
   }
   [zoom=9] {
-    text-size:14 + @text_adjust;
     text-character-spacing: 1;
     text-wrap-width: 80;
     text-line-spacing: 2;
   }
   [zoom=10] {
-    text-size:14 + @text_adjust;
     text-character-spacing: 2;
   }
 }
@@ -95,41 +90,41 @@
   text-fill:@city_text;
   text-halo-fill:@city_halo;
   text-halo-radius:2;
-  text-size: 11;
+  text-size: 11 + @text_adjust;
   [zoom>=8] {
-    text-size: 12;
+    text-size: 12 + @text_adjust;
   }
   [zoom=9] {
     text-wrap-width: 60;
   }
   [zoom=10] {
-    text-size:14;
+    text-size:14 + @text_adjust;
     text-wrap-width: 70;
   }
   [zoom=11] {
-    text-size:14;
+    text-size:14 + @text_adjust;
     text-character-spacing: 1;
     text-wrap-width: 80;
   }
   [zoom=12] {
-    text-size:14;
+    text-size:14 + @text_adjust;
     text-character-spacing: 1;
     text-wrap-width: 100;
   }
   [zoom=13] {
-    text-size:14;
+    text-size:14 + @text_adjust;
     text-character-spacing: 2;
     text-wrap-width: 200;
     text-transform: uppercase;
   }
   [zoom=14] {
-    text-size:15;
+    text-size:15 + @text_adjust;
     text-character-spacing: 4;
     text-wrap-width: 300;
     text-transform: uppercase;
   }
   [zoom=15] {
-    text-size:16;
+    text-size:16 + @text_adjust;
     text-character-spacing: 6;
     text-wrap-width: 400;
     text-transform: uppercase;
@@ -146,17 +141,19 @@
     text-face-name:@sans;
     text-placement:point;
     text-fill:@town_text;
-    text-size:9;
+    text-size:9 + @text_adjust;
     text-halo-fill:@town_halo;
     text-halo-radius:1;
     text-wrap-width: 50;
     [zoom>=8] {
       text-halo-radius:2;
-      text-size: 10;
+      text-size: 10 + @text_adjust;
     }
-    [zoom>=11]{ text-size:11; }
+    [zoom>=11]{ 
+      text-size:11 + @text_adjust; 
+    }
     [zoom>=12]{
-      text-size:12;
+      text-size:12 + @text_adjust;
       text-line-spacing: 1;
     }
     [zoom>=13]{
@@ -165,22 +162,22 @@
       text-line-spacing: 2;
     }
     [zoom>=14]{
-      text-size:13;
+      text-size:13 + @text_adjust;
       text-character-spacing: 2;
       text-line-spacing: 3;
     }
     [zoom>=15]{
-      text-size:14;
+      text-size:14 + @text_adjust;
       text-character-spacing: 3;
       text-line-spacing: 4;
     }
     [zoom>=15]{
-      text-size:15;
+      text-size:15 + @text_adjust;
       text-character-spacing: 4;
       text-line-spacing: 5;
     }
     [zoom>=17]{
-      text-size:16;
+      text-size:16 + @text_adjust;
       text-character-spacing: 5;
       text-line-spacing: 6;
     }
@@ -196,12 +193,12 @@
   text-face-name:@sans;
   text-placement:point;
   text-fill:@other_text;
-  text-size:12;
+  text-size:12 + @text_adjust;
   text-halo-fill:@other_halo;
   text-halo-radius:1;
   text-wrap-width: 30;
   [zoom>=14] {
-    text-size:13;
+    text-size:13 + @text_adjust;
     text-character-spacing: 1;
     text-wrap-width: 40;
     text-line-spacing: 1;
@@ -224,7 +221,7 @@
     text-line-spacing: 4;
   }
   [zoom>=18] {
-    text-size:14;
+    text-size:14 + @text_adjust;
     text-character-spacing: 4;
     text-line-spacing: 6;
   }
@@ -235,22 +232,22 @@
   text-face-name:@sans;
   text-placement:point;
   text-fill:@locality_text;
-  text-size:12;
+  text-size:12 + @text_adjust;
   text-halo-fill:@locality_halo;
   text-halo-radius:1;
   text-wrap-width: 30;
   [zoom>=16] {
-    text-size:12;
+    text-size:12 + @text_adjust;
     text-wrap-width: 60;
     text-line-spacing: 1;
   }
   [zoom>=17] {
-    text-size:13;
+    text-size:13 + @text_adjust;
     text-wrap-width: 120;
     text-line-spacing: 2;
   }
   [zoom>=18] {
-    text-size:13;
+    text-size:13 + @text_adjust;
     text-character-spacing: 1;
     text-line-spacing: 4;
   }
@@ -274,7 +271,7 @@
     text-name: "[name]";
     text-halo-radius: 1.5;
     text-face-name:@sans;
-    text-size: 11;
+    text-size: 11 + @text_adjust;
     text-wrap-width:30;
     text-fill: #888;
     text-halo-fill: #fff;
@@ -312,7 +309,7 @@
   [zoom=17][area>20000],
   [zoom=18][area>5000] {
     text-name: "[name]";
-    text-size: 13;
+    text-size: 13 + @text_adjust;
     text-wrap-width: 60;
     text-character-spacing: 1;
     text-halo-radius: 2;
@@ -320,13 +317,13 @@
   [zoom=16][area>1600000],
   [zoom=17][area>80000],
   [zoom=18][area>20000] {
-    text-size: 15;
+    text-size: 15 + @text_adjust;
     text-character-spacing: 2;
     text-wrap-width: 120;
   }
   [zoom>=17][area>1600000],
   [zoom>=18][area>80000] {
-    text-size: 20;
+    text-size: 20 + @text_adjust;
     text-character-spacing: 3;
     text-wrap-width: 180;
   }
@@ -338,7 +335,7 @@
 #poi[type='library'][zoom>=17] {
   text-name:"[name]";
   text-face-name:@sans;
-  text-size:10;
+  text-size:10 + @text_adjust;
   text-wrap-width:30;
   text-fill: @poi_text;
 }
@@ -358,7 +355,7 @@
   text-halo-radius: 1;
   text-placement: line;
   text-min-distance: 400;
-  text-size: 10;
+  text-size: 10 + @text_adjust;
   [type='river'][zoom=14],
   [type='canal'][zoom=16],
   [type='stream'][zoom=18] {
@@ -366,12 +363,12 @@
   }
   [type='river'][zoom=15],
   [type='canal'][zoom=17] {
-    text-size: 11;
+    text-size: 11 + @text_adjust;
     text-name: "[name].replace('([\S\ ])','$1 ')";
   }
   [type='river'][zoom>=16],
   [type='canal'][zoom=18] {
-    text-size: 14;
+    text-size: 14 + @text_adjust;
     text-name: "[name].replace('([\S\ ])','$1 ')";
     text-spacing: 300;
   }
@@ -426,7 +423,7 @@
   text-halo-fill:@road_halo;
   text-halo-radius:1;
   /*text-min-distance:20;*/
-  text-size:11;
+  text-size:11 + @text_adjust;
   text-avoid-edges: true;
   [zoom=11] { text-min-distance:70; }
   [zoom=12] { text-min-distance:80; }
@@ -444,10 +441,16 @@
   text-halo-radius:1;
   /*text-min-distance:20;*/
   text-avoid-edges: true;
-  text-size:10;
-  [zoom>=12] { text-size: 11; }
-  [zoom=14]  { text-size: 12; }
-  [zoom>=17] { text-size: 13; }
+  text-size:10 + @text_adjust;
+  [zoom>=12] { 
+    text-size: 11 + @text_adjust; 
+  }
+  [zoom=14]  { 
+    text-size: 12 + @text_adjust; 
+  }
+  [zoom>=17] { 
+    text-size: 13 + @text_adjust; 
+  }
 }
 
 #minorroad_label[zoom>=13] {
@@ -459,9 +462,9 @@
   text-halo-radius:1;
   text-min-distance:20;
   text-avoid-edges: true;
-  text-size:11;
-  [zoom=16] { text-size: 12; }
-  [zoom>=17] { text-size: 13; }
+  text-size:11 + @text_adjust;
+  [zoom=16] { text-size: 12 + @text_adjust; }
+  [zoom>=17] { text-size: 13 + @text_adjust; }
 }
 
 #path_label[zoom>=13] {
@@ -475,14 +478,14 @@
   //text-min-distance:100;
   //text-spacing: 200;
   text-avoid-edges: true;
-  text-size:11;
+  text-size:11 + @text_adjust;
   text-max-char-angle-delta: 20;
   [type='cycleway'] { text-fill: @cycle_text; text-halo-fill: @cycle_halo; }
   [type='footway'] { text-fill: @foot_text; text-halo-fill: @foot_halo; }
   [type='pedestrian'] { text-fill: @pedestrian_text; text-halo-fill: @pedestrian_halo; }
   [type='path'] { text-fill: @path_text; text-halo-fill: @path_halo; }
-  [zoom=16] { text-size: 12; }
-  [zoom>=17] { text-size: 13; }
+  [zoom=16] { text-size: 12 + @text_adjust; }
+  [zoom>=17] { text-size: 13 + @text_adjust; }
 }
 
 /* ================================================================== */
