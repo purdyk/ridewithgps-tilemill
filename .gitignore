@@ -2,6 +2,9 @@ layers/
 *.swp
 *.osm
 *.osm.bz2
+*.pbf
+eles/*
+*.hgt
 .vagrant_ram
 .vagrant_cpu
 .vagrant
