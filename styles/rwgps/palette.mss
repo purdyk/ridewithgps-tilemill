@@ -21,12 +21,12 @@
 Map { font-directory: url(./fonts); buffer-size: 256; background-color: @water; }
 
 /* set up font sets for various weights and styles */
-@sans_lt:           "DejaVu Sans Book", "unifont Medium";
-@sans_lt_italic:    "DejaVu Sans Book Italic", "unifont Medium";
-@sans:              "DejaVu Sans Book", "unifont Medium";
-@sans_italic:       "DejaVu Sans Italic", "unifont Medium";
-@sans_bold:         "DejaVu Sans Bold", "unifont Medium";
-@sans_bold_italic:  "DejaVu Sans Bold Italic", "unifont Medium";
+@sans_lt:           "Open Sans Light", "unifont Medium";
+@sans_lt_italic:    "Open Sans Light Italic", "unifont Medium";
+@sans:              "Open Sans Regular", "unifont Medium";
+@sans_italic:       "Open Sans Italic", "unifont Medium";
+@sans_bold:         "Open Sans Bold", "unifont Medium";
+@sans_bold_italic:  "Open Sans Bold Italic", "unifont Medium";
 
 
 /* Some fonts are larger or smaller than others. Use this variable to
