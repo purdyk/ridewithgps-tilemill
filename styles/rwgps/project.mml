@@ -613,20 +613,23 @@
     {
       "geometry": "linestring",
       "extent": [
-        -123.21099838186439,
-        45.09600143377555,
+        -123.2109983818644,
+        45.096001433775555,
         -122.11300189329812,
         45.8969989781367
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "( SELECT way, highway AS type, name, oneway\n  FROM planet_osm_line\n  WHERE name IS NOT NULL\n    AND highway IN  ('pedestrian','footway', 'cycleway', 'path')\n) AS data",
+        "table": "( SELECT way, highway AS type, name,\n    CASE\n        WHEN oneway IN ('yes', '-1') THEN oneway\n        WHEN junction IN ('roundabout') AND (oneway IS NULL OR NOT oneway IN ('no', 'reversible')) THEN 'yes'\n        ELSE NULL\n    END AS oneway\n  FROM planet_osm_line\n  WHERE name IS NOT NULL\n    AND highway IN  ('pedestrian','footway', 'cycleway', 'path')\n) AS data",
         "key_field": "",
         "geometry_field": "way",
         "extent_cache": "auto",
         "extent": "-13715785.6,5636647.63,-13593557.19,5763858.57",
         "user": "gis",
-        "dbname": "gis"
+        "dbname": "gis",
+        "id": "path_label",
+        "project": "rwgps",
+        "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
       },
       "id": "path_label",
       "class": "",
@@ -638,15 +641,16 @@
     {
       "Datasource": {
         "dbname": "gis",
-        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "extent": "-20037508.34,-20037508.34,20037508.34,20037508.34",
         "geometry_field": "way",
         "id": "motorway_label",
         "key_field": "",
         "project": "foss4g-2011",
         "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-        "table": "( SELECT way, highway AS type, name, ref, oneway, CHAR_LENGTH(ref) AS reflen\n    FROM planet_osm_line\n    WHERE highway IN ('motorway', 'trunk')\n      AND (name IS NOT NULL OR ref IS NOT NULL)\n) AS data",
+        "table": "( SELECT way, highway AS type, name, ref, CHAR_LENGTH(ref) AS reflen,\n    CASE \n      WHEN oneway IN ('yes', '-1') THEN oneway\n      WHEN junction IN ('roundabout') AND (oneway IS NULL OR NOT oneway IN ('no', 'reversible')) THEN 'yes'\n        ELSE NULL\n    END AS oneway\n    FROM planet_osm_line\n    WHERE highway IN ('motorway', 'trunk')\n      AND (name IS NOT NULL OR ref IS NOT NULL)\n) AS data",
         "type": "postgis",
-        "user": "gis"
+        "user": "gis",
+        "extent_cache": "auto"
       },
       "class": "",
       "geometry": "linestring",
@@ -654,20 +658,28 @@
       "name": "motorway_label",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
       "srs-name": "900913",
-      "status": "on"
+      "status": "on",
+      "extent": [
+        -179.9999999749438,
+        -85.051,
+        179.9999999749438,
+        85.051
+      ],
+      "advanced": {}
     },
     {
       "Datasource": {
         "dbname": "gis",
-        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "extent": "-20037508.34,-20037508.34,20037508.34,20037508.34",
         "geometry_field": "way",
         "id": "mainroad_label",
         "key_field": "",
         "project": "foss4g-2011",
         "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-        "table": "( SELECT way, highway AS type, name, oneway\n  FROM planet_osm_line\n  WHERE (name IS NOT NULL OR oneway IN ('yes', 'true', '1', '-1'))\n    AND highway IN ('primary', 'secondary', 'tertiary')\n) AS data",
+        "table": "( SELECT way, highway AS type, name,\n    CASE\n        WHEN oneway IN ('yes', '-1') THEN oneway\n        WHEN junction IN ('roundabout') AND (oneway IS NULL OR NOT oneway IN ('no', 'reversible')) THEN 'yes'\n        ELSE NULL\n    END AS oneway\n  FROM planet_osm_line\n  WHERE (name IS NOT NULL OR oneway IN ('yes', 'true', '1', '-1'))\n    AND highway IN ('primary', 'secondary', 'tertiary')\n) AS data",
         "type": "postgis",
-        "user": "gis"
+        "user": "gis",
+        "extent_cache": "auto"
       },
       "class": "",
       "geometry": "linestring",
@@ -675,20 +687,28 @@
       "name": "mainroad_label",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
       "srs-name": "900913",
-      "status": "on"
+      "status": "on",
+      "extent": [
+        -179.9999999749438,
+        -85.051,
+        179.9999999749438,
+        85.051
+      ],
+      "advanced": {}
     },
     {
       "Datasource": {
         "dbname": "gis",
-        "extent": "-20037508.34 -20037508.34 20037508.34 20037508.34",
+        "extent": "-20037508.34,-20037508.34,20037508.34,20037508.34",
         "geometry_field": "way",
         "id": "minorroad_label",
         "key_field": "",
         "project": "foss4g-2011",
         "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
-        "table": "( SELECT way, highway AS type, name, oneway\n  FROM planet_osm_line\n  WHERE (name IS NOT NULL OR oneway IN ('yes', 'true', '1', '-1'))\n    AND highway IN ('residential', 'unclassified', 'road', 'living_street', 'unknown')\n) AS data",
+        "table": "( SELECT way, highway AS type, name,\n    CASE\n        WHEN oneway IN ('yes', '-1') THEN oneway\n        WHEN junction IN ('roundabout') AND (oneway IS NULL OR NOT oneway IN ('no', 'reversible')) THEN 'yes'\n        ELSE NULL\n    END AS oneway\n  FROM planet_osm_line\n  WHERE (name IS NOT NULL OR oneway IN ('yes', 'true', '1', '-1'))\n    AND highway IN ('residential', 'unclassified', 'road', 'living_street', 'unknown')\n) AS data",
         "type": "postgis",
-        "user": "gis"
+        "user": "gis",
+        "extent_cache": "auto"
       },
       "class": "",
       "geometry": "linestring",
@@ -696,7 +716,14 @@
       "name": "minorroad_label",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
       "srs-name": "900913",
-      "status": "on"
+      "status": "on",
+      "extent": [
+        -179.9999999749438,
+        -85.051,
+        179.9999999749438,
+        85.051
+      ],
+      "advanced": {}
     },
     {
       "Datasource": {
