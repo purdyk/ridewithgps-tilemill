@@ -15,8 +15,8 @@ then
   #some of our npm installed packages need node as a command
   ln -s /usr/bin/nodejs /usr/bin/node
 
-  sudo -u postgres createuser gis
-  sudo -u postgres createdb -O gis gis
+  sudo -u postgres createuser gisuser
+  sudo -u postgres createdb -O gisuser gis
   sudo -u postgres psql -c "CREATE EXTENSION hstore; CREATE EXTENSION postgis;" -d gis
   sudo -u postgres psql -c "ALTER TABLE geometry_columns OWNER TO gis; ALTER TABLE spatial_ref_sys OWNER TO gis;" -d gis
 
@@ -32,7 +32,7 @@ wget --quiet http://osm-extracted-metros.s3.amazonaws.com/portland.osm.bz2
 bunzip2 portland.osm.bz2
 EOF
   fi
-  sudo -u postgres osm2pgsql --slim -d gis -U gis -C 512 --hstore --multi-geometry portland.osm
+  sudo -u postgres osm2pgsql --slim -d gis -U gisuser -C 512 --hstore --multi-geometry portland.osm
 
   #can't run npm as root
   su ubuntu << EOF
