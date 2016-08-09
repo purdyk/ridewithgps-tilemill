@@ -37,9 +37,10 @@
         -179.99999692067183,
         -85.051,
         179.99999692067183,
-        83.66933299999998
+        83.669333
       ],
-      "advanced": {}
+      "advanced": {},
+      "layer": null
     },
     {
       "Datasource": {
@@ -67,21 +68,22 @@
     },
     {
       "Datasource": {
-        "file": "layers/processed_p/coastline-good.shp"
+        "file": "layers/coastlines/coastline.shp"
       },
       "class": "shp",
       "geometry": "polygon",
-      "id": "processed_p",
-      "name": "processed_p",
+      "id": "coastline",
+      "name": "coastline",
       "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
       "srs-name": "900913",
       "extent": [
-        -179.99999692067183,
+        -180,
         -85.051,
-        179.99999692067183,
-        83.66933299999998
+        180,
+        83.6664731
       ],
-      "advanced": {}
+      "advanced": {},
+      "layer": null
     },
     {
       "Datasource": {
