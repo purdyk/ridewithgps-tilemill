@@ -654,7 +654,7 @@
       ],
       "Datasource": {
         "type": "postgis",
-        "table": "( SELECT way, highway AS type, name,\n    CASE\n        WHEN oneway IN ('yes', '-1') THEN oneway\n        WHEN junction IN ('roundabout') AND (oneway IS NULL OR NOT oneway IN ('no', 'reversible')) THEN 'yes'\n        ELSE NULL\n    END AS oneway\n  FROM planet_osm_line\n  WHERE name IS NOT NULL\n    AND highway IN  ('pedestrian','footway', 'cycleway', 'path')\n) AS data",
+        "table": "( SELECT way, highway AS type, name, bicycle,\n    CASE\n        WHEN oneway IN ('yes', '-1') THEN oneway\n        WHEN junction IN ('roundabout') AND (oneway IS NULL OR NOT oneway IN ('no', 'reversible')) THEN 'yes'\n        ELSE NULL END\n    AS oneway,\n    CASE\n      WHEN highway IN ('cycleway', 'footway', 'path') AND bicycle in ('yes', 'designated') THEN 'cycle'\n      WHEN highway IN ('footway', 'path') AND (bicycle IS NULL OR bicycle = 'no') THEN 'foot'\n      ELSE 'other'  END\n  AS stylegroup\n  FROM planet_osm_line\n  WHERE name IS NOT NULL\n    AND highway IN  ('pedestrian','footway', 'cycleway', 'path')\n) AS data",
         "key_field": "",
         "geometry_field": "way",
         "extent_cache": "auto",

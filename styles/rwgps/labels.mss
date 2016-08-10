@@ -464,7 +464,8 @@
   [zoom>=17] { text-size: 13; }
 }
 
-#path_label[zoom>=13] {
+#path_label[zoom>=14][stylegroup='cycle'],
+#path_label[zoom>=14][stylegroup='foot'] {
   text-label-position-tolerance: 80;
   text-name:'[name]';
   text-face-name:@sans;
@@ -477,10 +478,8 @@
   text-avoid-edges: true;
   text-size:11;
   text-max-char-angle-delta: 20;
-  [type='cycleway'] { text-fill: @cycle_text; text-halo-fill: @cycle_halo; }
-  [type='footway'] { text-fill: @foot_text; text-halo-fill: @foot_halo; }
-  [type='pedestrian'] { text-fill: @pedestrian_text; text-halo-fill: @pedestrian_halo; }
-  [type='path'] { text-fill: @path_text; text-halo-fill: @path_halo; }
+  [stylegroup='cycle'] { text-fill: @cycle_text; text-halo-fill: @cycle_halo; }
+  [stylegroup='foot'] { text-fill: @foot_text; text-halo-fill: @foot_halo; }
   [zoom=16] { text-size: 12; }
   [zoom>=17] { text-size: 13; }
 }
