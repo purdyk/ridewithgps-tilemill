@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>RWGPS Map Renderer</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+    <!-- Our JS -->
+    <script src="{{ url_for('static', filename='root.js') }}"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="col-md-10" id="img-holder"
+         style="
+            background-image: url('/static/loading.gif');
+            background-repeat: no-repeat;
+            background-position: 50% 50%;">
+        <img src="/static/clear.gif" id="output">
+    </div>
+
+    <div class="col-md-2">
+        <form id="the-form">
+            <div class="form-group">
+                <label for="north">North</label>
+                <input type="text" class="form-control" id="north" value="{{ request.args.get('north', '') }}">
+            </div>
+            <div class="form-group">
+                <label for="south">South</label>
+                <input type="text" class="form-control" id="south" value="{{ request.args.get('south', '') }}">
+            </div>
+            <div class="form-group">
+                <label for="east">East</label>
+                <input type="text" class="form-control" id="east" value="{{ request.args.get('east', '') }}">
+            </div>
+            <div class="form-group">
+                <label for="west">West</label>
+                <input type="text" class="form-control" id="west" value="{{ request.args.get('west', '') }}">
+            </div>
+
+            <div class="form-group">
+                <label for="scale">Scale</label>
+                <input type="text" class="form-control" id="scale" value="1">
+            </div>
+
+            <div class="form-group">
+                <label for="height">Output Height ( inches )</label>
+                <input type="text" class="form-control" id="height" value="8.5">
+            </div>
+
+            <div class="form-group">
+                <label for="width">Scale</label>
+                <input type="text" class="form-control" id="width" value="11">
+            </div>
+
+            <button type="submit" class="btn btn-default" id="do-it">Render</button>
+
+        </form>
+    </div>
+</div>
+</body>
+</html>
