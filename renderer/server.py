@@ -9,6 +9,13 @@ from MapRenderer import MapRenderer
 
 app = Flask(__name__)
 
+DEV_PATH = '/vagrant/renderer/rwgps.xml'
+PROD_PATH = '/var/map-styles/ridewithgps-tilemill/ridewithgps-tilemill.xml'
+
+ACTUAL_PATH = PROD_PATH
+if app.debug:
+    ACTUAL_PATH = DEV_PATH
+
 
 @app.route("/")
 def root():
@@ -26,7 +33,7 @@ def output():
     scale = float(request.args.get('scale', 1.0))
     save = bool(request.args.get('save', False))
 
-    mr = MapRenderer()
+    mr = MapRenderer(ACTUAL_PATH)
     mr.setBounds(west, south, east, north)
     mr.setSvg(svg)
 

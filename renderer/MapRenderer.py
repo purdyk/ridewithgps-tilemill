@@ -2,9 +2,8 @@ import mapnik
 
 
 class MapRenderer:
-    def __init__(self):
-        # style = '/var/map-styles/ridewithgps-tilemill/ridewithgps-tilemill.xml'
-        self.style = '/vagrant/renderer/rwgps.xml'
+    def __init__(self, style):
+        self.style = style
 
         # webmercator projection
         self.merc = mapnik.Projection(
