@@ -12,10 +12,12 @@ class MapRenderer:
         # WGS lat/long source projection of centre
         self.longlat = mapnik.Projection('+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs')
 
+        self.transform = mapnik.ProjTransform(self.longlat, self.merc)
+
         self.svg = False
 
     def setBounds(self, west, south, east, north):
-        self.bounds = mapnik.Box2d(west, south, east, north)
+        self.bounds = mapnik.Envelope(west, south, east, north)
 
     def setSvg(self, doSvg):
         self.svg = doSvg
@@ -23,8 +25,7 @@ class MapRenderer:
     def render(self, width, height, scale):
         map = mapnik.Map(width, height)
         mapnik.load_map(map, self.style)
-        map.srs = self.longlat.params()
-        map.zoom_to_box(self.bounds)
+        map.zoom_to_box(self.transform.forward(self.bounds))
 
         # if svg:
         #     import cairo
@@ -32,6 +33,7 @@ class MapRenderer:
         #     mapnik.render(map, surface, scale, 0, 0)
         #     surface.finish()
         # else:
+
         image = mapnik.Image(map.width, map.height)
         mapnik.render(map, image, scale, 0, 0)
         return image.tostring('png')
